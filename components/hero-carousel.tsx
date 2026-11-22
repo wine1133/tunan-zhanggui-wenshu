@@ -158,7 +158,7 @@ export default function HeroCarousel() {
         <div className="absolute inset-0 bg-[#07111e]/78" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#07111e] via-[#07111e]/85 to-[#07111e]/25" />
       </div>
-      <div className="relative grid min-h-[468px] items-center gap-7 px-5 pb-16 pt-7 sm:px-7 sm:pb-[76px] sm:pt-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(360px,.7fr)] lg:gap-10 lg:px-10 lg:py-10 xl:px-12">
+      <div className="relative grid min-h-[468px] items-center gap-7 px-5 pb-16 pt-7 sm:px-7 sm:pb-[76px] sm:pt-8 lg:grid-cols-2 lg:gap-10 lg:px-10 lg:py-10 xl:px-12">
         <div key={`copy-${slide.id}`} className="carousel-content">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-3 py-1.5 text-[11px] font-medium text-white/70 backdrop-blur-sm">
             <Rabbit size={14} style={{ color: slide.accent }} />
