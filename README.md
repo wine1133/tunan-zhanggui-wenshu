@@ -1,8 +1,10 @@
-# 掌柜问数
+# 兔南掌柜问数
 
-掌柜问数是一个面向数据仓库场景的智能问数系统。用户直接用中文提问，系统完成元数据召回、只读 SQL 生成与校验、数据查询、结果表格和自动可视化。
+兔南掌柜问数是一个面向数据仓库场景的智能问数系统。用户直接用中文提问，系统完成元数据召回、只读 SQL 生成与校验、数据查询、结果表格和自动可视化。
 
-公网演示：https://zhanggui-wenshu.builtbluebell8.chatgpt.site`n`nGitHub：https://github.com/wine1133/zhanggui-wenshu
+公网演示：https://tunan-zhanggui-wenshu.builtbluebell8.chatgpt.site
+
+GitHub：https://github.com/wine1133/tunan-zhanggui-wenshu
 
 ## 功能
 

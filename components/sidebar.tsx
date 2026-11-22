@@ -1,11 +1,12 @@
 "use client";
 
 import {
-  BarChart3,
+
   ChevronDown,
   Database,
   Gauge,
   History,
+  Rabbit,
   LayoutDashboard,
   ShieldCheck,
   X,
@@ -61,10 +62,10 @@ export default function Sidebar({
             aria-label="返回问数工作台"
           >
             <span className="relative grid h-10 w-10 place-items-center rounded-[13px] bg-[#ff6b2c] shadow-[0_10px_30px_rgba(255,107,44,.35)]">
-              <BarChart3 size={21} strokeWidth={2.4} />
+              <Rabbit size={21} strokeWidth={2.2} />
             </span>
             <span>
-              <span className="block text-[17px] font-semibold tracking-tight">掌柜问数</span>
+              <span className="block text-[17px] font-semibold tracking-tight">兔南掌柜问数</span>
               <span className="block text-[10px] uppercase tracking-[0.18em] text-white/45">Data Copilot</span>
             </span>
           </button>
@@ -119,7 +120,7 @@ export default function Sidebar({
                 <Database size={19} />
               </span>
               <div className="min-w-0">
-                <p className="truncate text-sm font-semibold">掌柜数据仓</p>
+                <p className="truncate text-sm font-semibold">兔南数据仓</p>
                 <p className="mt-0.5 text-[11px] text-white/40">
                   {overview ? `${formatNumber(overview.source.factRows)} 条订单` : "正在连接..."}
                 </p>

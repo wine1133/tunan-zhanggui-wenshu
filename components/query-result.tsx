@@ -47,7 +47,7 @@ export default function QueryCard({ entry }: { entry: QueryEntry }) {
           <div className="min-w-0 flex-1">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <div>
-                <p className="text-sm font-semibold text-[#344054]">掌柜 AI</p>
+                <p className="text-sm font-semibold text-[#344054]">兔南 AI</p>
                 <p className="mt-0.5 text-[10px] text-[#98a2b3]">
                   {entry.status === "running" ? "正在分析数据" : entry.status === "success" ? "分析完成" : "执行失败"}
                 </p>

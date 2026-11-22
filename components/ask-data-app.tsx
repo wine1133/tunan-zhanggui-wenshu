@@ -192,7 +192,7 @@ export default function AskDataApp() {
               <button type="button" onClick={() => setMobileNavOpen(true)} className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-[#d9dee7] bg-white text-[#344054] lg:hidden" aria-label="打开导航"><Menu size={19} /></button>
               <div className="min-w-0">
                 <div className="flex items-center gap-2 text-[13px] text-[#7b8494]">
-                  <span>掌柜问数</span><span className="text-[#c0c5ce]">/</span><span className="truncate text-[#344054]">{VIEW_LABELS[activeView]}</span>
+                  <span>兔南掌柜问数</span><span className="text-[#c0c5ce]">/</span><span className="truncate text-[#344054]">{VIEW_LABELS[activeView]}</span>
                 </div>
                 <p className="mt-0.5 hidden text-xs text-[#98a1b0] sm:block">Natural language analytics workspace</p>
               </div>

@@ -4,10 +4,10 @@ import {
   Loader2,
   Search,
   Send,
-  Sparkles,
 } from "lucide-react";
 import type { OverviewData } from "../lib/api-types";
 import type { QueryEntry } from "./app-types";
+import HeroCarousel from "./hero-carousel";
 import QueryCard from "./query-result";
 import {
   CategoryCard,
@@ -49,50 +49,7 @@ export default function WorkbenchView({
 }) {
   return (
     <div className="space-y-5">
-      <section className="relative overflow-hidden rounded-[28px] bg-[#111a2b] px-5 py-6 text-white shadow-[0_22px_60px_rgba(17,26,43,.16)] sm:px-8 sm:py-8">
-        <div className="pointer-events-none absolute inset-0 opacity-25 [background-image:linear-gradient(rgba(255,255,255,.09)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.09)_1px,transparent_1px)] [background-size:34px_34px]" />
-        <div className="pointer-events-none absolute -right-16 -top-24 h-80 w-80 rounded-full bg-[#ff6b2c]/35 blur-[90px]" />
-        <div className="pointer-events-none absolute -bottom-32 left-1/3 h-72 w-72 rounded-full bg-[#246bfd]/20 blur-[90px]" />
-
-        <div className="relative grid items-center gap-8 lg:grid-cols-[minmax(0,1.35fr)_minmax(310px,.65fr)]">
-          <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-3 py-1.5 text-[11px] font-medium text-white/65">
-              <Sparkles size={13} className="text-[#ff9a6b]" />
-              统一元数据 · 安全 SQL · 自动可视化
-            </div>
-            <h1 className="mt-5 max-w-[720px] text-[clamp(30px,4.4vw,50px)] font-semibold leading-[1.08] tracking-[-0.035em]">
-              问一句，
-              <span className="text-[#ff8a54]">把数据变成答案。</span>
-            </h1>
-            <p className="mt-4 max-w-2xl text-sm leading-6 text-white/55 sm:text-[15px]">
-              用中文直接询问销售、商品、地区和客户表现。掌柜问数会自动理解问题、召回指标口径、生成并执行 SQL。
-            </p>
-          </div>
-
-          <div className="relative rounded-2xl border border-white/10 bg-white/[0.055] p-4 backdrop-blur-sm">
-            <div className="mb-4 flex items-center justify-between">
-              <span className="text-xs font-medium text-white/60">Agent 执行链路</span>
-              <span className="rounded-full bg-[#c9f27b]/10 px-2 py-1 text-[10px] font-semibold text-[#d7ff9c]">READY</span>
-            </div>
-            <div className="space-y-2">
-              {[
-                ["01", "元数据召回", "表 · 字段 · 指标"],
-                ["02", "SQL 生成", "上下文增强"],
-                ["03", "安全校验", "只读白名单"],
-                ["04", "执行与洞察", "表格 · 图表"],
-              ].map(([number, title, detail], index) => (
-                <div key={number} className="flex items-center gap-3">
-                  <span className={`grid h-8 w-8 shrink-0 place-items-center rounded-lg text-[10px] font-bold ${index === 0 ? "bg-[#c9f27b] text-[#111a2b]" : "border border-white/10 bg-white/5 text-white/50"}`}>{number}</span>
-                  <div className="min-w-0 flex-1 rounded-lg border border-white/[0.07] bg-black/10 px-3 py-2">
-                    <p className="text-xs font-medium text-white/80">{title}</p>
-                    <p className="mt-0.5 text-[10px] text-white/35">{detail}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroCarousel />
 
       <section className="relative z-10 -mt-1 rounded-2xl border border-[#e0e4eb] bg-white p-3 shadow-[0_16px_42px_rgba(17,26,43,.08)] sm:p-4">
         <form onSubmit={onSubmit} className="flex items-end gap-3">

@@ -102,7 +102,7 @@ export async function GET() {
 
     const payload: OverviewData = {
       source: {
-        name: "掌柜数据仓",
+        name: "兔南数据仓",
         engine: "Cloudflare D1",
         status: "online",
         tables: Number(scaleResult?.tables ?? 0),

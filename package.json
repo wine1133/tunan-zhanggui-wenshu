@@ -1,5 +1,5 @@
 {
-  "name": "zhanggui-wenshu",
+  "name": "tunan-zhanggui-wenshu",
   "version": "1.0.0",
   "private": "true",
   "engines": {
@@ -67,5 +67,5 @@
       "sharp": "0.35.4"
     }
   },
-  "description": "掌柜问数：基于自然语言的数据仓库分析与可视化平台"
+  "description": "兔南掌柜问数：基于自然语言的数据仓库分析与可视化平台"
 }

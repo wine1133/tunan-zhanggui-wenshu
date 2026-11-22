@@ -113,3 +113,35 @@ svg text {
     transition-duration: 0.01ms !important;
   }
 }
+@keyframes carousel-content-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes carousel-visual-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes carousel-progress-run {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+.carousel-content {
+  animation: carousel-content-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.carousel-visual {
+  animation: carousel-visual-in 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.carousel-progress {
+  transform-origin: left center;
+  animation: carousel-progress-run 6.2s linear both;
+  box-shadow: 0 0 18px currentColor;
+}
+
+.carousel-shell[data-paused="true"] .carousel-progress {
+  animation-play-state: paused;
+}
