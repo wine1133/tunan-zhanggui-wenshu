@@ -154,7 +154,7 @@ export default function HeroCarousel() {
       <div className="pointer-events-none absolute right-16 top-14 h-10 w-10 rounded-full border border-white/10" />
 
       <div className="pointer-events-none absolute inset-0 lg:hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-35" style={{ backgroundImage: `url(${slide.image})` }} />
+        <div className="absolute inset-0 bg-cover bg-center opacity-35" style={{ backgroundImage: `url(${slide.image})`, backgroundPosition: "calc(50% - 3px) center" }} />
         <div className="absolute inset-0 bg-[#07111e]/78" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#07111e] via-[#07111e]/85 to-[#07111e]/25" />
       </div>
@@ -270,6 +270,7 @@ function PhotoPanel({ slide }: { slide: (typeof SLIDES)[number] }) {
         priority
         sizes="(min-width: 1024px) 520px, 0px"
         className="object-cover"
+        style={{ objectPosition: "calc(50% - 3px) center" }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-[#07111e] via-[#07111e]/18 to-black/5" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#07111e]/22 via-transparent to-transparent" />
