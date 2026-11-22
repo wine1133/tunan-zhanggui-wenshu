@@ -1,5 +1,7 @@
 # 兔南掌柜问数
 
+> 详细项目说明：[docs/项目说明.md](docs/项目说明.md)
+
 兔南掌柜问数是一个面向数据仓库场景的智能问数系统。用户直接用中文提问，系统完成元数据召回、只读 SQL 生成与校验、数据查询、结果表格和自动可视化。
 
 公网演示：https://tunan-zhanggui-wenshu.builtbluebell8.chatgpt.site
